@@ -2,7 +2,7 @@ const weather = document.querySelector(".js-weather");
 
 const COORDS = "coords";
 const API_KEY = "77366365637ced520d4188028d414297";
-const CITY_ID = "1835847";
+// const CITY_ID = "1835847";
 
 function getWeater(lat, lon) {
     fetch(
@@ -66,7 +66,7 @@ function loadCoords() {
 }
 
 function init() {
-    // loadCoords();
-    getWeatherCity(CITY_ID);
+    loadCoords();
+    // getWeatherCity(CITY_ID);
 }
 init();
